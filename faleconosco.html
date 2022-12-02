@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vita Naturalle</title>
+</head>
+<body leftmargin="30px" bgcolor="F6D860">
+  <header>
+    <h3><img width="180px" height="100px" src="assets/Logotipo.png" alt="Logotipo"/>
+      <aside>
+        <ol><b>
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="institucional.html">
+              Quem somos
+            </a>
+          </li>
+          <li>
+            <a href="produtos.html">
+              Produtos
+            </a>
+          </li>
+          <li>
+            <a href="cadastro.html">
+              Meu Cadastro
+            </a>
+          </li>
+          <li>
+            <a href="carrinhodecompra.html">
+              <img width="40px" height="40px" src="assets/logo_carrinho.png" alt="Logotipo Carrinho"/></a>
+          </li></b><br>
+        </ol>
+      </aside>
+    </h3>
+  </header>
+  <main>
+    <h3>Ficou com alguma dúvida?</br>
+    Teremos um grande prazer em ajudá-lo!</h3>
+    
+    <form id="contact_form" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="nome">Seu Nome:</label><br />
+        <input id="nome" class="input" name="nome" type="text" value="" size="30" /><br />
+        <span id="nome_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Seu e-mail:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="assunto">Assunto:</label><br />
+        <input id="assunto" class="input" name="assunto" type="text" value="" size="30" /><br />
+        <span id="assunto_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Comentários:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+        
+        <input id="submit_button" type="submit" name="Envia" value="Enviar">
+        <input id="submit_button" type="reset" name="Apaga" value="Apagar"> </p>
+    </form>
+  </main>
+  <footer>
+    <h3>Nos acompanhe nas redes sociais:
+        <a target="_blank" href="https://www.instagram.com"><img width="30px" height="30px" src="assets/instagram-logo.jpeg"></a>
+        <a target="_blank" href="https://www.facebook.com"><img width="30px" height="30px" src="assets/Facebook_logo.jpeg"></a>
+    </h3>
+    <a href=""><strong>
+        FALE CONOSCO</strong>
+    </a><br>
+    <center><p><strong>Esta página faz parte do Projeto Integrador desenvolvido pelo Grupo 2 / Turma 2 - Programa Portal Tech</strong></p></center>
+  </footer>
+</body>
+</html>
