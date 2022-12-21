@@ -73,6 +73,10 @@ header {
 header span a img{
     margin-left: 20px;
 }
+header span a img:hover {
+    display: flex;
+    scale: 1.1;
+}
 header ul {
     font-family: 'Poppins', sans-serif;
     display: flex;
