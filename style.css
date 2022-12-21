@@ -202,6 +202,10 @@ header ul {
     width: 50px;
     height: 200px;
 }
+.product-image:hover{
+    display: flex;
+    scale: 1.3;
+}
 
 #main_search{
     background-color:rgb(223, 184, 171);
