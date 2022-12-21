@@ -422,10 +422,118 @@ header ul {
     border-radius: 5px;
     transition: all 0.2s linear;
 }
+.carrinho {
+    padding: 0 300px 0 300px;
+}
+.cx_carrinho1 {
+	border-radius: 8px;
+	border-color: #000;
+}
+.cx_carrinho2 {
+    background-color: rgb(243, 233, 193);
+    border-radius: 12px;
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cx_carrinho3 {
+	padding: 15px 20px 0 20px;
+}
+.carrinho_linha {
+	display: flex;
+	padding: 15px 0;
+	flex-direction: row;
+}
+.carrinho_linha1 {
+	height: 100px;
+}
+.carrinho_linha1_img {
+	flex: 1;
+	position: relative;
+}
+.carrinho_linha1_img span {
+	width: 0;
+	height: 0;
+	border-radius: 30px;
+	display: inline-block;
+	background-size: contain;
+}
+.carrinho_linha1_prod {
+	flex: 2;
+}
+.carrinho_linha1_prod h4 {
+	margin: 10px 0 0;
+}
+.carrinho_linha1_prod p {
+	margin: 5px 0 0;
+	font-size: 0.9em;
+}
+.carrinho_linha1_quant {
+	flex: 2;
+}
+.carrinho_linha1_quant ul {
+	list-style: none;
+}
+.carrinho_linha1_quant ul li {
+	display: inline-block;
+	font-size: 0.8em;
+	padding: 0 5px;
+}
+.carrinho_linha1_quant ul li a {
+	color: #000;
+	text-decoration: none;
+}
+.carrinho_linha1_valor {
+	flex: 1;
+}
+.carrinho_linha1_valor p {
+	margin: 23px 0 0 0;
+}
+.carrinho_resumo {
+    background-color: rgb(240, 236, 220);
+    border-radius: 12px;
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    text-align:center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.carrinho_vltotal {
+	display: flex;
+	flex-direction:row;
+}
+.carrinho_vltotal p{
+	margin: 5px 0;
+    padding: 0 5px 0 5px;
+}
+.carrinho_vltotal_titulo {
+	flex: 1;
+	text-align: left;
+}
+.carrinho_total {
+	flex: 1;
+	text-align: right;
+}
+.carrinho_resumo button {
+    width: 50%;
+    cursor: pointer;  
+    background: rgb(255, 127, 63);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
 .pre_footer {
     padding-bottom: 120px;
 }
-
 .footer {
     background-image: url(./assets/img_footer.JPG);
     background-size: 100%;
@@ -440,7 +548,6 @@ header ul {
     padding: 0;
     object-fit: cover;
 }
-
 .footer_list {
     display: flex;
     justify-content: space-between;
@@ -467,7 +574,6 @@ header ul {
     background-color: rgb(33, 196, 33);
     transition: all 0.4s ease-in-out;
 }
-
 #footer_end {
     font-size: 0.9rem;
 }
