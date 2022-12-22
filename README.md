@@ -1,4 +1,5 @@
 Este é o Projeto Integrador desenvolvido pelo Grupo 2 / Turma 2 do Programa Portal Tech 2022, realizado pela Proz Educação em parceria com a Meta e AWS.
+
 Nosso projeto consiste na criação e desenvolvimento de um site e-commerce de produtos naturais, com informações sobre os benefícios do consumo e receitas com os produtos disponíveis.
 O site conta com 7 páginas, sendo:
 - Home (index.html) - é a página principal, onde encontram-se destacados os produtos em oferta, as novidades, a receita da semana e o produto mais vendido.
