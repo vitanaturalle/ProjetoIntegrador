@@ -5,13 +5,22 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
-body{
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: rgb(245, 219, 115);
 }
 main {
     padding: 5vh;
     color: #000;
     background-color: rgb(245, 219, 115);
+}
+/* ---------- RESPONSIVIDADE CSS ---------- */
+.small-header {
+    font-size: 20px;
+    padding: 10px;
 }
 ul li a {
     text-decoration: none;
@@ -223,7 +232,7 @@ header ul {
     float:left;
     background-color:white;
     padding-left:5px;
-    font-size:18px;
+    font-size:16px;
     border:none;
     height:32px;
     width:191px;
@@ -232,6 +241,7 @@ header ul {
     border:none;
     float:left;
     height:32px;
+    font-size: 12px;
     border-radius:0 7px 7px 0;
     width:74px;
     font-weight:bold;
@@ -241,6 +251,7 @@ header ul {
     border:none;
     float:left;
     height:32px;
+    font-size: 12px;
     border-radius:0 7px 7px 0;
     width:79px;
     font-weight:bold;
@@ -291,7 +302,7 @@ header ul {
 .cx_2:hover {
     scale: 1.1;
 }
-.main_login {
+/*.main_login {
     display: flex;
     gap: 40px;
     margin-top: 30px;
@@ -352,7 +363,264 @@ header ul {
     width:480px;
     border-color: grey;
     border-radius: 6px;
+}*/
+
+/* FORMULARIO CADASTRO */
+    
+/* content que contem os formulários */
+.cad_content{
+    width: 300px;
+    height: 150px;
+    margin: 150px 120px 40px 280px;
+    padding: 100px;
+    position: relative;
 }
+
+/* formatando o cabeçalho dos formulários */
+    
+.cad_container label{
+    color:black;
+    position: relative;
+}
+    
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  {
+    color: darkgreen  ; 
+}
+.cad_content input:-moz-placeholder,
+.cad_content textarea:-moz-placeholder{
+    color: darkgreen;
+} 
+.cad_content input {
+    outline: none;
+}
+    
+.cad_content input:not([type="checkbox"]){
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;  
+    border-color: grey;
+    background-color: white;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 6px;
+    
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+    
+/*estilo do botão submit */
+.cad_content input[type="submit"]{
+    width: 100%!important;
+    cursor: pointer;  
+    background: rgb(255, 127, 63);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff; 
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+.cad_content input[type="submit"]:hover{
+    background: rgb(252, 93, 14);
+}
+    
+/*marcando os links para mudar de um formulário para outro */
+.cad_link{
+    position: absolute;
+    background: rgb(247, 215, 90);
+    color: black;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #fff;
+    
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 5px;
+}
+.cad_link a {
+    background: rgb(255, 127, 63);
+    padding: 6px;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    
+    -webkit-border-radius: 4px;
+    border-radius: 4px;  
+
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+}
+.cad_link a:hover {
+    color: white;
+    background: rgb(252, 93, 14);
+    border: 1px solid white;
+}
+    
+/* estilos para ambos os formulários */
+#cad_cadastro, 
+#cad_login{
+    position: absolute;
+    top: 0px;
+    width: 88%; 
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background-color: rgb(246, 216, 96) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    -webkit-box-shadow: 5px;
+    border-radius: 5px;
+    
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+    
+#paracadastro:target ~ .cad_content #cad_cadastro,
+#paralogin:target ~ .cad_content #cad_login{
+    z-index: 2;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+#registro:target ~ .cad_content #cad_login,
+#paralogin:target ~ .cad_content #cad_cadastro{
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+}
+    
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+    
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+}
+    
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+.cad_content label {
+    margin-bottom: .2rem;
+    position: relative;
+  }
+  
+.cad_content label:not(:first-of-type){
+    margin-top: 1rem;
+  }
+  
+.cad_content input {
+    padding: .2rem .5rem;
+  }
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: relative;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+
+.cad_content input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+.cad_content input.correct {
+    background-color: #c5f8c5;
+    border: solid 2px #2bd62b;
+    color: #206620;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+  
+
+.visible {
+    display: block;
+}
+
+.msg-success, .msg-error {
+    visibility:hidden;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+form i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+
 .section_recipe {
     display: flex;
     flex-direction: row;

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
     <title>Vita Naturalle</title>
 </head>
 <body>
@@ -32,58 +35,65 @@
         </nav>
     </header>
     <main>
-        <p class="main"></p><center>
-        <h1 class="titlePage">Meu Cadastro</h1></center>
-        <section class="main_login">
-            <div class="main_login1">
-                <h2>Login:</h2>
-                <form action="/">
-                    <fieldset>
-                        <label for="login">
-                            E-mail ou CPF:<br>
-                        </label>
-                        <input type="text" id="login" name="username">
-                    </fieldset>
-                    <fieldset>
-                        <label for="senha">
-                            Senha:<br>
-                        </label>
-                        <input type="password" id="senha">
-                    </fieldset><br>
-                    <button type="submit">
-                        Enviar
-                    </button>
-                    <center><p><a href="">
-                        Esqueci minha senha
-                    </p></center>
-                </form>
-            </div>
-            <div class="main_login2">
-                <h2>Criar conta:</h2>
-                <form action="/">
-                    <fieldset>
-                        <label for="login">
-                            Informe e-mail para validação:<br>
-                        </label>
-                        <input type="text" id="login" name="username">
-                    </fieldset>
-                    <fieldset>
-                        <label for="senha">
-                            Crie uma senha:<br>
-                        </label>
-                        <input type="password" id="senha">
-                    </fieldset>
-                    <p>- A senha deve conter de 6 a 10 caracteres;<br>
-                        - Deve conter letra maiúscula e minúscula;<br>
-                        - Deve conter número;<br>
-                        - Deve conter um caractere especial (. * ? ! & -).<br>
+        <div class="cad_container">
+            <a class="cad_links" id="paracadastro"></a>
+            <a class="cad_links" id="paralogin"></a>
+             
+            <div class="cad_content">      
+                <div id="cad_login">
+                    <form id="form1" method="post" action="">
+                    <h1>Login</h1>
+                    
+                        <label for="email_login">Informe seu e-mail:</label>
+                        <input id="cad_email_login" name="email_login" type="email" placeholder="email@dominio.com" required>
+                        <p id="cad_email_helper" class="helper-text">Mensagem de ajuda</p>
+                                      
+                        <label for="senha_login">Informe sua senha:</label>
+                        <input id="cad_senha_login" name="senha_login" type="password" placeholder="" required> 
+                        <p id="cad_senha_helper" class="helper-text">Mensagem de ajuda</p>
+                    
+                        <input type="checkbox" name="manterlogado" id="cad_manterlogado" value="" /> 
+                        <label for="manterlogado">Manter-me conectado</label>
+                    
+                        <input id="submit1" type="submit" value="Enviar" /> 
+                        
+                        <p class="cad_link">
+                        Ainda não tem conta?
+                        <a href="#paracadastro">Cadastre-se</a>
                     </p>
-                    <button type="submit">
-                        Prosseguir
-                    </button>
-                </form>
+                    </form>
+                </div>
+         
+                <div id="cad_cadastro">
+                    <form id="form2" method="post" action=""> 
+                    <h1>Cadastro</h1> 
+                        <label for="nome_cad">Seu nome completo:</label>
+                        <input id="nome_cad" name="nome_cad" type="text" placeholder="nome" required>
+                        <p id="nome_cad_helper" class="helper-text">Mensagem de ajuda</p>
+                   
+                        <label for="email_cad">Seu e-mail:</label>
+                        <input id="email_cad" name="email_cad" type="email" placeholder="email@dominio.com"required> 
+                        <p id="email_cad_helper" class="helper-text">Mensagem de ajuda</p>
+                   
+                        <label for="senha_cad">Crie uma senha:</label>
+                        <input id="senha_cad" name="senha_cad" type="password" placeholder="Mínimo 6 e máximo 10 caracteres" required>
+                        <p id="senha_cad_helper" class="helper-text">Mensagem de ajuda</p>
+                   
+                        <label for="conf_senha_cad">Confirme sua senha:</label>
+                        <input id="conf_senha_cad" name="conf_senha_cad" type="password" placeholder="Repita a senha" required>
+                        <p id="conf_senha_cad_helper" class="helper-text">Mensagem de ajuda</p>
+                   
+                        <input id="submit2" type="submit" value="Cadastrar"/> 
+                        
+                        <p class="cad_link">  
+                        Já tem conta?
+                        <a href="#paralogin"> Ir para Login </a>
+                        </p>
+                    </form>
+                </div>
             </div>
-        </section><br>
+        </div>
+        <p class="pre_footer"></p>
     </main>
     <footer class="footer">
         <div class="footer_list">
