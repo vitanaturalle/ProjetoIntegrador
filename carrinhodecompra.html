@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
-  <script src="script.js" defer></script>
+  <script src="script.js" defer></script> 
   <title>Vita Naturalle</title>
 </head>
 <body>
@@ -49,11 +49,9 @@
                   <h4>Café Orgânico Native</h4>
               </div>
               <div class="carrinho_linha1_quant">
-                <ul>
-                  <li><a href="#">-</a></li>
-                  <li>1</li>
-                  <li><a href="#">+</a></li>
-                </ul>
+                <button id="btn-subtrair-produto-01">-</button>
+                <input id="quantidade-produto-01" type="number" value="1" min="0">
+                <button id="btn-adicionar-produto-01">+</button>
               </div>
               <div class="carrinho_linha1_valor">
                 <h4>R$ 18,90</h4>
@@ -102,7 +100,7 @@
         <section class="carrinho_resumo">
           <div class="carrinho_vltotal">
               <h3 class="carrinho_vltotal_titulo">Subtotal</h3>
-              <h3 class="carrinho_total">R$56,60</h3>
+              <h3 class="carrinho_total">50</h3>
             </div>
             <div class="carrinho_vltotal">
               <h3 class="carrinho_vltotal_titulo">Frete</h3>

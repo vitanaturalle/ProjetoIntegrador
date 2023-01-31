@@ -38,41 +38,41 @@
         <p class="main"></p><center>
         <h3>Ficou com alguma dúvida?</br>
             Teremos um grande prazer em ajudá-lo!</h3><br>
-            <section class="form_contact">
-                <form id="contact_form" method="POST" enctype="multipart/form-data"></form>
+            <div class="form_contact">
+                <form id="contact_form_FC" method="POST" enctype="multipart/form-data"></form>
                     <div class="form_contact1">
                         <div class="row">
-                            <label class="required" for="nome">Seu Nome:</label><br />
-                            <input id="nome" class="input" name="nome" type="text" value=""><br>
-                            <span id="nome_validation" class="error_message"></span>
+                            <label for="nome_FC">Seu nome completo:</label><br/>
+                            <input id="nome_FC" class="input" name="nome_FC" type="text" placeholder="nome" required><br>
+                            <p id="nome_helper_FC" class="helper-text">Mensagem de ajuda</p>
                         </div>
                         <div class="row">
-                            <label class="required" for="email">Seu e-mail:</label><br />
-                            <input id="email" class="input" name="email" type="text" value=""><br>
-                            <span id="email_validation" class="error_message"></span>
+                            <label for="email_FC">Seu e-mail:</label><br/>
+                            <input id="email_FC" class="input" name="email_FC" type="email" placeholder="email@dominio.com"required><br>
+                            <p id="email_helper_FC" class="helper-text">Mensagem de ajuda</p>
                         </div>
                         <div class="row">
-                            <label class="required" for="telefone">Seu telefone:</label><br />
-                            <input id="telefone" class="input" name="telefone" type="text" value=""><br>
-                            <span id="telefone_validation" class="error_message"></span>
+                            <label for="telefone_FC">Seu melhor telefone:</label><br/>
+                            <input id="telefone_FC" class="input" name="telefone_FC" type="text" placeholder="telefone" required><br>
+                            <p id="telefone_helper_FC" class="helper-text">Mensagem de ajuda</p>
                         </div>
                         <div class="row">
-                            <label class="required" for="assunto">Assunto:</label><br />
-                            <input id="assunto" class="input" name="assunto" type="text" value=""><br>
-                            <span id="assunto_validation" class="error_message"></span>
+                            <label for="assunto_FC">Assunto:</label><br/>
+                            <input id="assunto_FC" class="input" name="assunto_FC" type="text" placeholder="assunto" required><br>
+                            <p id="assunto_helper_FC" class="helper-text">Mensagem de ajuda</p>
                         </div>
                     </div>
                     <div class="form_contact2">
                         <div class="row2">
-                            <label class="required" for="message">Comentários:</label><br />
-                            <textarea id="message" class="input" name="message" rows="10"></textarea><br>
-                            <span id="message_validation" class="error_message"></span>
+                            <label for="comments_FC">Comentários:</label><br/>
+                            <textarea id="comments_FC" class="input" name="comments_FC" rows="10" placeholder="Máximo de 360 caracteres" required></textarea><br>
+                            <span id="comments_helper_FC" class="error_message"></span>
                         </div>
-                        <input id="submit_button" type="submit" name="Envia" value="Enviar">
-                        <input id="submit_button" type="reset" name="Apaga" value="Apagar"> </p>
+                        <input id="submit_button_FC" type="submit" name="Envia" value="Enviar">
+                        <input id="envia_button_FC" type="button" name="Apaga" value="Apagar" onclick="limparForm();"></p>                       
                     </div>
                 </form>
-            </section></center><br>
+            </div></center><br>
     </main>
     <footer class="footer">
         <div class="footer_list">

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produto.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="js/produtos.js" defer></script>
     <script src="script.js" defer></script>
     <title>Vita Naturalle</title>
 </head>
@@ -28,86 +31,85 @@
                 <li><a href="cadastro.html">Meu Cadastro</a></li>
                 <li><a href="carrinhodecompra.html">
                     <img id="logo_cart" width="50px" height="50px" src="assets/logo_carrinho.png" alt="Logotipo Carrinho"/></a>
+                    <div class="menu-openner"><span></span></div>
                 </li><br>
             </ul>
         </nav>
     </header>
+    <div class="models">
+        <div class="product-item">
+            <a href="">
+                <div class="product-item--img"><img src="" /></div>
+                <div class="product-item--add">+</div>
+            </a>
+            <div class="product-item--price">R$ --</div>
+            <div class="product-item--name">--</div>
+            <div class="product-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
     <main>
-        <p class="main"></p>
-        <section>
-            <div id="main_search">
-                <form action="...">
-                    <img width="30px" height="30px"src="assets/search.png" alt="Buscar..."/>
-                    <input type="text" id="search" placeholder="Pesquisar..."/>
-                    <button type="submit" id="btnSearch2">
-                        Pesquisar
-                    </button>
-                </form>
-            </div>
-        </section>
-        <center><h1>Nossos Produtos
-        </h1></center>
-        <aside><h3>
-            <li>
-                <a href="">
-                        Todos os produtos
-                </a>
-            </li>
-            <li>
-                <a href="">
-                        Produtos por categoria
-                </a>
-            </li>
-            <li>
-                <a href="">
-                        Ofertas exclusivas
-                </a>
-            </li>
-            <li>
-                <a href="">
-                        Mais vendidos
-                </a>
-            </li></h3>
-        </aside>
-        <section><center>
-            <div class="linha1">
-                <div class="product">
-                    <img class="product-image" class="cx_1" src="assets/azeite.jpg" alt="Produto 1">
-                    <h2 class="product-name">Azeite</h2>
-                    <p class="product-description">O Azeite de Oliva Extra Virgem Orgânico é obtido a partir de um blend das mais finas variedades de azeitonas do Mediterrâneo. 
-                        Derivado de uma agricultura orgânica certificada, nosso Azeite de Oliva Extra Virgem Orgânico traz um toque de natureza para sua mesa diretamente do coração da Itália. 
-                        Resultante da extração a frio, sem auxílio de quaisquer solventes, é um produto com acidez menor que 0,3% e frutado médio.</p>
-                </div>
-                <div class="product">
-                    <img class="product-image" src="assets/cafe.jpg" alt="Produto 2">
-                    <h2 class="product-name">Café Orgânico Torrado em Grãos</h2>
-                    <p class="product-description">Café Orgânico Torrado em Grãos Native, a essência integral dos melhores grãos. 
-                        Além de ser 100% puro, o Café Orgânico Torrado em Grãos Native é 100% Arábica. 
-                        Após a seleção dos melhores grãos, ele recebe uma torra média clara.</p>
-                </div>
-                <div class="product">
-                    <img class="product-image" src="assets/chamate.jpg" alt="Produto 2">
-                    <h2 class="product-name">Chá Mate Orgânico 1L</h2>
-                    <p class="product-description">Atenta a um mercado com grande potencial de crescimento em nosso país, apresentamos sua nova linha de Chá Mate Orgânico pronto para beber.
-                        Os produtos estão disponíveis em duas versões: tradicional e com limão, em embalagens TetraPak de 1L. 
-                        O Chá Mate Orgânico com Limão Native possui ainda suco integral de limão orgânico em sua composição, agregando as propriedades e o sabor da própria fruta para a bebida.
-                        Os produtos estão de acordo com a regulamentação brasileira de orgânicos e recebem a certificação do IBD, agência credenciada pelo MAPA
-                        (Ministério da Agricultura, Pecuária e Abastecimento) que inspeciona e garante todos os ingredientes e etapas do processo de produção.</p>
-                </div>
-                <div class="product">
-                    <img class="product-image" src="assets/sucodeuva.jpg" alt="Produto 2">
-                    <h2 class="product-name">Suco de Uva Orgânico 1L</h2>
-                    <p class="product-description">O Suco de Uva Orgânico é produzido com uvas orgânicas do tipo Bordeaux, 
-                        levemente adocicada e sem perder os tons delicados, o Suco de Uva Orgânico é também uma grande aliada da saúde. 
-                        Na uva são encontrados o resveratrol, que colabora para o controle do colesterol e os flavonóides, que são antioxidantes.
-                        Experimente divertir as crianças preparando um picolé delicioso do </p>
-                </div>
-            </div>
-            <div>
-                <a href="produtos.html"><< 1 2 3 4 ... >></a>
-            </div>
-        </section><br>
+        <center>
+        <h1>Nossos Produtos</h1><br>
+        </center>
+        <div class="product-area"></div>
     </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer"></div>
+            <center><h1>Seu carrinho</h1></center>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+                <div class="cart--limpar">Limpar carrinho</div>
+            </div>
+        </div>
+    </aside>
+    <div class="productWindowArea">
+        <div class="productWindowBody">
+            <div class="productInfo--cancelMobileButton">Voltar</div>
+            <div class="productBig">
+                <img src="" />
+            </div>
+            <div class="productInfo">
+                <h1>--</h1>
+                <div class="productInfo--desc">--</div>
+                <div class="productInfo--pricearea">
+                    <div class="productInfo--sector">Preço</div>
+                    <div class="productInfo--price">
+                        <div class="productInfo--actualPrice">R$ --</div>
+                        <div class="productInfo--qtarea">
+                            <button class="productInfo--qtmenos">-</button>
+                            <div class="productInfo--qt">1</div>
+                            <button class="productInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productInfo--addButton">Adicionar ao carrinho</div>
+                <div class="productInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer_list">
             <h4>Nos acompanhe nas redes sociais:<br>

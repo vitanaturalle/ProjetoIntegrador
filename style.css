@@ -196,29 +196,6 @@ header ul {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: rgb(149, 205, 65);
 }
-.product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 380px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-.product-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-.product-description {
-    font-size: 14px;
-}
-.product-image {
-    width: 50px;
-    height: 200px;
-}
-.product-image:hover{
-    display: flex;
-    scale: 1.3;
-}
 
 #main_search{
     background-color:rgb(223, 184, 171);
@@ -371,7 +348,7 @@ header ul {
 .cad_content{
     width: 300px;
     height: 150px;
-    margin: 150px 120px 40px 280px;
+    margin: 150px 120px 100px 280px;
     padding: 100px;
     position: relative;
 }
@@ -383,8 +360,6 @@ header ul {
     position: relative;
 }
     
-/**** advanced input styling ****/
-/* placeholder */
 ::-webkit-input-placeholder  {
     color: darkgreen  ; 
 }
@@ -413,7 +388,6 @@ header ul {
     transition: all 0.2s linear;
 }
     
-/*estilo do botão submit */
 .cad_content input[type="submit"]{
     width: 100%!important;
     cursor: pointer;  
@@ -432,7 +406,6 @@ header ul {
     background: rgb(252, 93, 14);
 }
     
-/*marcando os links para mudar de um formulário para outro */
 .cad_link{
     position: absolute;
     background: rgb(247, 215, 90);
@@ -467,7 +440,6 @@ header ul {
     border: 1px solid white;
 }
     
-/* estilos para ambos os formulários */
 #cad_cadastro, 
 #cad_login{
     position: absolute;
@@ -551,7 +523,7 @@ header ul {
     }
 }
 
-.cad_content label {
+.cad_content label, .form_contact label {
     margin-bottom: .2rem;
     position: relative;
   }
@@ -559,8 +531,12 @@ header ul {
 .cad_content label:not(:first-of-type){
     margin-top: 1rem;
   }
+
+.form_contact label:not(:first-of-type){
+    margin-top: 1rem;
+}
   
-.cad_content input {
+.cad_content input, .form_contact input {
     padding: .2rem .5rem;
   }
 
@@ -583,24 +559,17 @@ header ul {
     background-color: #202020;
 }
 
-.cad_content input.error {
+.cad_content input.error, .form_contact1 input.error {
     border: solid 2px #992020;
     background-color: #CCBBBB;
     color: #662020;
 }
 
-.cad_content input.correct {
+.cad_content input.correct .form_contact1 input.correct {
     background-color: #c5f8c5;
     border: solid 2px #2bd62b;
     color: #206620;
 }
-
-.helper-text {
-    display: none;
-    font-size: .8rem;
-    color: darkred;
-}
-  
 
 .visible {
     display: block;
