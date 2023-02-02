@@ -523,7 +523,7 @@ header ul {
     }
 }
 
-.cad_content label, .form_contact label {
+.cad_content label {
     margin-bottom: .2rem;
     position: relative;
   }
@@ -531,12 +531,8 @@ header ul {
 .cad_content label:not(:first-of-type){
     margin-top: 1rem;
   }
-
-.form_contact label:not(:first-of-type){
-    margin-top: 1rem;
-}
   
-.cad_content input, .form_contact input {
+.cad_content input {
     padding: .2rem .5rem;
   }
 
@@ -559,13 +555,13 @@ header ul {
     background-color: #202020;
 }
 
-.cad_content input.error, .form_contact1 input.error {
+.cad_content input.error {
     border: solid 2px #992020;
     background-color: #CCBBBB;
     color: #662020;
 }
 
-.cad_content input.correct .form_contact1 input.correct {
+.cad_content input.correct {
     background-color: #c5f8c5;
     border: solid 2px #2bd62b;
     color: #206620;
