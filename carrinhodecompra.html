@@ -1,151 +1,94 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <script src="script.js" defer></script> 
-  <title>Vita Naturalle</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrinhodecompra.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="js/carrinhodecompra.js" defer></script>
+    <script src="js/produtos.js" defer></script>
+    <title>Vita Naturalle</title>
 </head>
 <body>
-  <header id="header_logo">
-      <span>
-          <a href="index.html">
-              <img width="200px" height="120px" src="assets/Logotipo.png" alt="Logotipo"/>
-          </a>
-      </span>
-      <nav class="header_list">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="institucional.html">Quem somos</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="cadastro.html">Meu Cadastro</a></li>
-              <li><a href="carrinhodecompra.html">
-                  <img id="logo_cart" width="50px" height="50px" src="assets/logo_carrinho.png" alt="Logotipo Carrinho"/></a>
-              </li><br>
-          </ul>
-      </nav>
-  </header>
-  <main><h2>
-    <p class="main"></p>
-    <div class="carrinho">
-      <center><h1>Meu Carrinho</h1></center>
-      <div class="cx_carrinho1">
-        <div class="cx_carrinho2">
-          <div class="cx_carrinho3">
-            <div class="carrinho_linha">
-              <div class="carrinho_linha1_img">
-                <img src="assets/cafe.jpg" width="50%" alt="Café">
-                <span></span>
-              </div>
-              <div class="carrinho_linha1_prod">
-                  <h4>Café Orgânico Native</h4>
-              </div>
-              <div class="carrinho_linha1_quant">
-                <button id="btn-subtrair-produto-01">-</button>
-                <input id="quantidade-produto-01" type="number" value="1" min="0">
-                <button id="btn-adicionar-produto-01">+</button>
-              </div>
-              <div class="carrinho_linha1_valor">
-                <h4>R$ 18,90</h4>
-              </div>	
+    <header id="header_logo">
+        <span>
+            <a href="index.html">
+                <img width="200px" height="120px" src="assets/Logotipo.png" alt="Logotipo"/>
+            </a>
+        </span>
+        <nav class="header_list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="institucional.html">Quem somos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="cadastro.html">Meu Cadastro</a></li>
+                <li><a href="carrinhodecompra.html">
+                    <img id="logo_cart" width="50px" height="50px" src="assets/logo_carrinho.png" alt="Logotipo Carrinho"/></a>
+                    <div class="menu-openner"><span></span></div>
+                </li><br>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="cartc">
+        <div class="cartc--area">
+          <center><h1>Seu Carrinho</h1></center>
+          <div class="cartc"></div>
+          <div class="cartc--details">
+            <div class="cartc--totalitem subtotal">
+              <span>Subtotal</span>
+              <span>R$ --</span>
             </div>
-            <div class="carrinho_linha">
-              <div class="carrinho_linha1_img">
-                <img src="assets/azeite.jpg" width="20%" alt="Azeite">
-                <span></span>
-              </div>
-              <div class="carrinho_linha1_prod">
-                  <h4>Azeite Orgânico Native</h4>
-              </div>
-              <div class="carrinho_linha1_quant">
-                <ul>
-                  <li><a href="#">-</a></li>
-                  <li>1</li>
-                  <li><a href="#">+</a></li>
-                </ul>
-              </div>
-              <div class="carrinho_linha1_valor">
-                <h4>R$ 21,90</h4>
-              </div>	
+            <div class="cartc--totalitem desconto">
+              <span>Desconto</span>
+              <span>R$ --</span>
             </div>
-            <div class="carrinho_linha">
-              <div class="carrinho_linha1_img">
-                <img src="assets/farfalle_integral_barilla.jpg" width="60%" alt="Farfalle">
-                <span></span>
-              </div>
-              <div class="carrinho_linha1_prod">
-                  <h4>Farfalle Integral Barilla</h4>
-              </div>
-              <div class="carrinho_linha1_quant">
-                <ul>
-                  <li><a href="#">-</a></li>
-                  <li>2</li>
-                  <li><a href="#">+</a></li>
-                </ul>
-              </div>
-              <div class="carrinho_linha1_valor">
-                <h4>R$ 15,80</h4>
-              </div>	
+            <div class="cartc--totalitem total big">
+              <span>Total</span>
+              <span>R$ --</span>
             </div>
+            <div class="cartc--finalizar">Finalizar a compra</div>
           </div>
         </div>
-        <section class="carrinho_resumo">
-          <div class="carrinho_vltotal">
-              <h3 class="carrinho_vltotal_titulo">Subtotal</h3>
-              <h3 class="carrinho_total">50</h3>
-            </div>
-            <div class="carrinho_vltotal">
-              <h3 class="carrinho_vltotal_titulo">Frete</h3>
-              <h3 class="carrinho_total">R$5,00</h3>
-            </div>
-              <div class="carrinho_vltotal">
-              <h3 class="carrinho_vltotal_titulo">Total</h3>
-              <h3 class="carrinho_total">R$61,60</h3>
-            </div><br>
-            <button>Finalizar Compra</button>
-          </section>
-        </div>
-        <div><br>
-          <center><h2>Formas de Pagamento:</h2>
-          <img src="assets/forma_pagamento.jpg" alt="Forma de Pagamento" width="60%"></center>
-        </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer">
-      <div class="footer_list">
-          <h4>Nos acompanhe nas redes sociais:<br>
-              <a target="_blank" href="https://www.instagram.com"><img width="13%" height="45%" src="assets/instagram-logo.jpeg"></a>
-              <a target="_blank" href="https://www.facebook.com"><img width="13%" height="45%" src="assets/Facebook_logo.jpeg"></a>
-          </h4>
-          <div class="footer_card">
-              <a target="_blank" href="faleconosco.html"><img width="15%" height="100%" src="assets/logo_whatsapp.png"></a>
-              <a href="faleconosco.html"><strong>
-                  FALE CONOSCO</strong>
-              </a><br>
-          </div>
-          <nav>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="institucional.html">Quem somos</a></li>
-                  <li><a href="produtos.html">Produtos</a></li>
-                  <li><a href="cadastro.html">Meu Cadastro</a></li>
-              </ul>
-          </nav>
+      <div><br>
+        <center><h2>Formas de Pagamento:</h2>
+        <img src="assets/forma_pagamento.jpg" alt="Forma de Pagamento" width="30%"></center>
       </div>
-      <center>
-          <span id="footer_end">
-              <strong>Esta página faz parte do Projeto Integrador desenvolvido pelo Grupo 2 / Turma 2 - Programa Portal Tech 2022</strong>
-          </span>
-      </center>
-  </footer>
+    </main>
+    <footer class="footer">
+        <div class="footer_list">
+            <h4>Nos acompanhe nas redes sociais:<br>
+                <a target="_blank" href="https://www.instagram.com"><img width="13%" height="45%" src="assets/instagram-logo.jpeg"></a>
+                <a target="_blank" href="https://www.facebook.com"><img width="13%" height="45%" src="assets/Facebook_logo.jpeg"></a>
+            </h4>
+            <div class="footer_card">
+                <a target="_blank" href="faleconosco.html"><img width="15%" height="100%" src="assets/logo_whatsapp.png"></a>
+                <a href="faleconosco.html"><strong>
+                    FALE CONOSCO</strong>
+                </a><br>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="institucional.html">Quem somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cadastro.html">Meu Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <center>
+            <span id="footer_end">
+                <strong>Esta página faz parte do Projeto Integrador desenvolvido pelo Grupo 2 / Turma 2 - Programa Portal Tech 2022</strong>
+            </span>
+        </center>
+    </footer>
 </body>
 </html>

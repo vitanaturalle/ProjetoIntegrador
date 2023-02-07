@@ -1,74 +1,6 @@
-let productJson = [
-  {
-      id: 1,
-      name: 'Choco Wheyfer Bites',
-      img: 'assets/choco_wheyfer.jpg',
-      price: 9.00,
-      description: 'Choco Wheyfer Bites Chocolate Avela Mais Mu 35g. Choco Wheyfer Bites Chocolate Avela Mais Mu  é um lanche proteico, sem adição de açúcares e tá aí pra mostrar que o docinho saudável também pode ser muito gostoso.'
-    },
-    {
-      id: 2,
-      name: 'Café Orgânico Native',
-      img: 'assets/cafe.jpg',
-      price: 27.00,
-      description: 'Café Orgânico Torrado em Grãos Native, a essência integral dos melhores grãos. Além de ser 100% puro, o Café Orgânico Torrado em Grãos Native é 100% Arábica. Após a seleção dos melhores grãos, ele recebe uma torra média clara.'
-    },
-    {
-      id: 3,
-      name: 'Pasta Amendoim Eat Clean',
-      img: 'assets/pasta_amendoim.jpg',
-      price: 31.00,
-      description: 'Pasta Amendoim Salted Caramel Eat Clean 300g. Zero adição de açúcar e vegano.'
-    },
-    {
-      id: 4,
-      name: 'Farfalle Integral Barilla',
-      img: 'assets/farfalle_integral_barilla.jpg',
-      price: 13.00,
-      description: 'Macarrão BARILLA Integral Farfalle 500g'
-    },
-    {
-      id: 5,
-      name: 'Farinha de Trigo Integral Vitao',
-      img: 'assets/farinha_integral_vitao.jpg',
-      price: 8.00,
-      description: 'Farinha de Trigo Integral Vitao 500g. A farinha de trigo integral é obtida através da moagem dos grãos inteiros de trigo, ou seja, não passa pelo processo de refinamento, preservando assim boa parte dos nutrientes.'
-    },
-    {
-      id: 6,
-      name: 'Quinoa Grão Orgânica Mãe Terra',
-      img: 'assets/quinoa.jpg',
-      price: 35.00,
-      description: 'Quinoa Grão Orgânica Mãe Terra 250g. A Quinoa Grão Orgânica Mãe Terra 250g, é uma excelente opção de grão para ser consumido por todos, inclusive veganos por ser excelente fonte de proteínas vegetais.'
-    },
-    {
-      id: 7,
-      name: 'Suco de Uva Orgânico Native',
-      img: 'assets/sucodeuva.jpg',
-      price: 6.00,
-      description: 'Suco de Uva Orgânico Native 200ml. É produzido com uvas orgânicas do tipo Bordeaux, levemente adocicadas e sem perder os tons delicados, sendo também um grande aliado da saúde.'
-    },
-    {
-      id: 8,
-      name: 'Chá Mate Limão Native',
-      img: 'assets/chamate.jpg',
-      price: 9.00,
-      description: 'Chá Mate Limão Orgânico Native 1L.O Chá Mate Orgânico com Limão Native possui ainda suco integral de limão orgânico em sua composição, agregando as propriedades e o sabor da própria fruta para a bebida.'
-    },
-    {
-      id: 8,
-      name: 'Azeite de Oliva Native',
-      img: 'assets/azeite.jpg',
-      price: 27.00,
-      description: 'Azeite de Oliva Extra Virgem Orgânico Native 500ml. Obtido a partir de um blend das mais finas variedades de azeitonas do Mediterrâneo'
-    }
-];
-
-
-/* ------- PRODUTOS -------*/
 let modalKey = 0
 let quantproducts = 1
-let cart = [] // carrinho
+let cartc = [] // carrinho
 const seleciona = (elemento) => document.querySelector(elemento)
 const selecionaTodos = (elemento) => document.querySelectorAll(elemento)
 
@@ -144,11 +76,11 @@ const adicionarNoCarrinho = () => {
         let price = seleciona('.productInfo--actualPrice').innerHTML.replace('R$&nbsp;', '')
     
 	    let identificador = productJson[modalKey].id+'t'
-        let key = cart.findIndex( (item) => item.identificador == identificador )
+        let key = cartc.findIndex( (item) => item.identificador == identificador )
         console.log(key)
 
         if(key > -1) {
-            cart[key].qt += quantproducts
+            cartc[key].qt += quantproducts
         } else {
             let product = {
                 identificador,
@@ -156,7 +88,7 @@ const adicionarNoCarrinho = () => {
                 qt: quantproducts,
                 price: parseFloat(price)
             }
-            cart.push(product)
+            cartc.push(product)
             console.log(product)
             console.log('Sub total R$ ' + (product.qt * product.price).toFixed(2))
         }
@@ -168,70 +100,70 @@ const adicionarNoCarrinho = () => {
 }
 
 const abrirCarrinho = () => {
-    console.log('Qtd de itens no carrinho ' + cart.length)
-    if(cart.length > 0) {
-	    seleciona('aside').classList.add('show')
+    console.log('Qtd de itens no carrinho ' + cartc.length)
+    if(cartc.length > 0) {
+	    seleciona('main').classList.add('show')
         seleciona('header').style.display = 'flex'
     }
     seleciona('.menu-openner').addEventListener('click', () => {
-        if(cart.length > 0) {
-            seleciona('aside').classList.add('show')
-            seleciona('aside').style.left = '0'
+        if(cartc.length > 0) {
+            seleciona('main').classList.add('show')
+            seleciona('main').style.left = '0'
         }
     })
 }
 
 const fecharCarrinho = () => {
     seleciona('.menu-closer').addEventListener('click', () => {
-        seleciona('aside').style.left = '100vw'
+        seleciona('main').style.left = '100vw'
         seleciona('header').style.display = 'flex'
     })
 }
 
 const atualizarCarrinho = () => {
-	seleciona('.menu-openner span').innerHTML = cart.length
+	seleciona('.menu-openner span').innerHTML = cartc.length
 	
-	if(cart.length > 0) {
+	if(cartc.length > 0) {
 
-		seleciona('aside').classList.add('show')
+		seleciona('main').classList.add('show')
 
-		seleciona('.cart').innerHTML = ''
+		seleciona('.cartc').innerHTML = ''
 
 		let subtotal = 0
 		let desconto = 0
 		let total    = 0
 
-		for(let i in cart) {
-			let productItem = productJson.find( (item) => item.id == cart[i].id )
+		for(let i in cartc) {
+			let productItem = productJson.find( (item) => item.id == cartc[i].id )
 			console.log(productItem)
-        	subtotal += cart[i].price * cart[i].qt
-			let cartItem = seleciona('.models .cart--item').cloneNode(true)
-			seleciona('.cart').append(cartItem)
+        	subtotal += cartc[i].price * cartc[i].qt
+			let cartcItem = seleciona('.models .cartc--item').cloneNode(true)
+			seleciona('.cartc').append(cartcItem)
 
 			let productName = `${productItem.name}`
-			cartItem.querySelector('img').src = productItem.img
-			cartItem.querySelector('.cart--item-nome').innerHTML = productName
-			cartItem.querySelector('.cart--item--qt').innerHTML = cart[i].qt
+			cartcItem.querySelector('img').src = productItem.img
+			cartcItem.querySelector('.cartc--item-nome').innerHTML = productName
+			cartcItem.querySelector('.cartc--item--qt').innerHTML = cartc[i].qt
 
-			cartItem.querySelector('.cart--item-qtmais').addEventListener('click', () => {
+			cartcItem.querySelector('.cartc--item-qtmais').addEventListener('click', () => {
 				console.log('Clicou no botão mais')
-				cart[i].qt++
+				cartc[i].qt++
 				atualizarCarrinho()
 			})
 
-			cartItem.querySelector('.cart--item-qtmenos').addEventListener('click', () => {
+			cartcItem.querySelector('.cartc--item-qtmenos').addEventListener('click', () => {
 				console.log('Clicou no botão menos')
-				if(cart[i].qt > 1) {
-					cart[i].qt--
+				if(cartc[i].qt > 1) {
+					cartc[i].qt--
 				} else {
-					cart.splice(i, 1)
+					cartc.splice(i, 1)
 				}
 
-                (cart.length < 1) ? seleciona('header').style.display = 'flex' : ''
+                (cartc.length < 1) ? seleciona('header').style.display = 'flex' : ''
 				atualizarCarrinho()
 			})
 
-			seleciona('.cart').append(cartItem)
+			seleciona('.cartc').append(cartcItem)
 
 		}
 		desconto = subtotal * 0
@@ -242,26 +174,26 @@ const atualizarCarrinho = () => {
 		seleciona('.total span:last-child').innerHTML    = formatoReal(total)
 
 	} else {
-		seleciona('aside').classList.remove('show')
-		seleciona('aside').style.left = '100vw'
+		seleciona('main').classList.remove('show')
+		seleciona('main').style.left = '100vw'
 	}
 }
 
 const finalizarCompra = () => {
-    seleciona('.cart--finalizar').addEventListener('click', () => {
+    seleciona('.cartc--finalizar').addEventListener('click', () => {
         console.log('Finalizar compra')
-        seleciona('aside').classList.remove('show')
-        seleciona('aside').style.left = '100vw'
+        seleciona('main').classList.remove('show')
+        seleciona('main').style.left = '100vw'
         seleciona('header').style.display = 'flex'
     })
 }
 
 
 /*const limparCarrinho = () => {
-    seleciona('.cart--limpar').addEventListener('click', () => {
+    seleciona('.cartc--limpar').addEventListener('click', () => {
         console.log('Limpar carrinho')
-        seleciona('aside').classList.remove('show')
-        seleciona('aside').style.left = '100vw'
+        seleciona('main').classList.remove('show')
+        seleciona('main').style.left = '100vw'
         seleciona('header').style.display = 'flex'
     })
 }*/
@@ -276,7 +208,7 @@ productJson.map((item, index ) => {
     
     productItem.querySelector('.product-item a').addEventListener('click', (e) => {
         e.preventDefault()
-        console.log('Clicou no product')
+        console.log('Clicou na product')
         let chave = pegarKey(e)
         abrirModal()
 
