@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-10T08:59:51.864Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="F0VYleouiv-sTzG2yyRM" version="20.8.18" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-10T09:01:09.024Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="kzakYWUsUkfeKEEABCIj" version="20.8.18" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1434" dy="1654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -229,7 +229,7 @@
             <mxPoint x="290" y="-380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C8iDo5fxbI8Zp-oNNPF2-52" value="Diagrama Entidade Relacionamento - DER" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#393C56;fontStyle=1;fontSize=21;" parent="1" vertex="1">
+        <mxCell id="C8iDo5fxbI8Zp-oNNPF2-52" value="Diagrama Entidade Relacionamento - DER (3FN)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#393C56;fontStyle=1;fontSize=21;" parent="1" vertex="1">
           <mxGeometry x="20" y="-830" width="1075" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ULu7LcjcAWQZxjpIvT3--1" value="" style="edgeStyle=entityRelationEdgeStyle;endArrow=ERzeroToMany;startArrow=ERone;endFill=1;startFill=0;labelBackgroundColor=none;fontColor=default;strokeColor=#E07A5F;entryX=0;entryY=0.733;entryDx=0;entryDy=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="C8iDo5fxbI8Zp-oNNPF2-53" target="C-vyLk0tnHw3VtMMgP7b-3">
