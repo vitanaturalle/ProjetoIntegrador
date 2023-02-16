@@ -252,30 +252,23 @@ header ul {
 }
 .footer_list {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     position:relative;
     left: 0;
     height: 100px;
     right: 0;
-    margin: 0;
+    margin: 10px;
     bottom: 0;
     padding: 0;
     object-fit: cover;
 }
-.footer_card {
-    background-color: rgb(149, 205, 65);
-    border-radius: 12px;
-    bottom: 0;
-    position: relative;
-    width: 160px;
-    align-items: center;
-    height: 20px;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.footer_card img {
+    width: 40%;
+    float: right;
+    margin: 0 0 10px 0;
 }
-.footer_card:hover {
+.footer_card img:hover {
     scale: 1.1;
-    background-color: rgb(33, 196, 33);
     transition: all 0.4s ease-in-out;
 }
 #footer_end {

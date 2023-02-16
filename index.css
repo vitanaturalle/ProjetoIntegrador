@@ -105,7 +105,7 @@ header ul {
     background-color:rgb(223, 184, 171);
     border:solid 2px rgb(255, 127, 63);
     border-radius:10px;
-    width:300px;
+    width:225px;
     height:32px;
     margin-left: 75%;
 }
@@ -116,7 +116,7 @@ header ul {
     font-size:16px;
     border:none;
     height:32px;
-    width:191px;
+    width:150px;
 }
 #btnSearch{
     border:none;
@@ -124,7 +124,7 @@ header ul {
     height:32px;
     font-size: 12px;
     border-radius:0 7px 7px 0;
-    width:74px;
+    width:40px;
     font-weight:bold;
     background:rgb(255, 127, 63);
 }
@@ -134,7 +134,7 @@ header ul {
     height:32px;
     font-size: 12px;
     border-radius:0 7px 7px 0;
-    width:79px;
+    width:40px;
     font-weight:bold;
     background:rgb(255, 127, 63);
 }
@@ -263,10 +263,10 @@ header ul {
     justify-content: center;
 }
 .cx_1 {
-    background-color: rgb(255, 127, 63);
+    background-color:rgb(255, 127, 63);
     border-radius: 12px;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor:pointer;
@@ -278,8 +278,7 @@ header ul {
     background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 100%;
-    height: 100%;
-    min-height: 350px;
+    height: 300px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor:pointer;
@@ -307,28 +306,23 @@ header ul {
 }
 .footer_list {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     position:relative;
     left: 0;
     height: 100px;
     right: 0;
-    margin: 0;
+    margin: 10px;
     bottom: 0;
     padding: 0;
     object-fit: cover;
 }
-.footer_card {
-    background-color: rgb(149, 205, 65);
-    border-radius: 12px;
-    width: 160px;
-    align-items: center;
-    height: 20px;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.footer_card img {
+    width: 40%;
+    float: right;
+    margin: 0 0 10px 0;
 }
-.footer_card:hover {
+.footer_card img:hover {
     scale: 1.1;
-    background-color: rgb(33, 196, 33);
     transition: all 0.4s ease-in-out;
 }
 #footer_end {

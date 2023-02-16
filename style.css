@@ -119,18 +119,8 @@ header ul {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: rgb(245, 223, 137);
 }
-.main_description_two {
-    border-radius: 12px;
-    width: 10%;
-    height: 400px;
-    padding: 30px;
-} 
-.main_description_three {
-    border-radius: 12px;
-    width: 50%;
-    height: 100px;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.main_description_one img {
+    margin-left: 20px;
 }
 .quem_somos {
     text-align: justify;
@@ -888,28 +878,23 @@ form i {
 }
 .footer_list {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     position:relative;
     left: 0;
     height: 100px;
     right: 0;
-    margin: 0;
+    margin: 10px;
     bottom: 0;
     padding: 0;
     object-fit: cover;
 }
-.footer_card {
-    background-color: rgb(149, 205, 65);
-    border-radius: 12px;
-    width: 160px;
-    align-items: center;
-    height: 20px;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.footer_card img {
+    width: 40%;
+    float: right;
+    margin: 0 0 10px 0;
 }
-.footer_card:hover {
+.footer_card img:hover {
     scale: 1.1;
-    background-color: rgb(33, 196, 33);
     transition: all 0.4s ease-in-out;
 }
 #footer_end {
