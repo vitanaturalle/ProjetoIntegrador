@@ -180,6 +180,34 @@ form2.addEventListener("submit", (e)=> {
     location.reload()
 })
 
+/*// ---------- HABILITAR ENVIO DE FORMULÁRIO ---------- //
+const submitButton = document.getElementById("submit2");
+
+const inputsCorretos = {
+  usernameInput: false, 
+  emailInput: false,
+  senhaInput: false,
+  confirmaSenhaInput: false
+}
+
+submitButton.addEventListener("click", (e)=> {
+  e.preventDefault()
+  
+  const values = Object.values(inputsCorretos)
+
+  const anyFalse = values.filter((value) => value === false)
+
+  if(!anyFalse.length) {
+    alert("FORMULÁRIO ENVIADO COM SUCESSO!")
+    //Atualiza a página após envio dos dados
+    location.reload()
+    } else {
+    alert("Preencha corretamente todos os campos!")
+  }
+
+})*/
+
+
 
 /*----------------CÓDIGO CARRINHO-------------
 Dúvidas:

@@ -6,7 +6,6 @@
     text-decoration: none;
 }
    
-
 html, body{
     background-color:white;
     font-size:15px;
@@ -20,12 +19,18 @@ html, body{
     padding: 0px;
     background-color: rgb(245, 219, 115);
 }
+html, body{
+    background-image: url(./assets/img_bk_light.JPG);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
 main {
     padding: 5vh;
+    color: #000;
     min-height: 100vh;
     width: 100vw;
     color: #000;
-    background-color: rgb(245, 219, 115);
     box-sizing: border-box;
     flex:1;
     margin-top:10px;
@@ -102,7 +107,7 @@ header {
     top: 0;
 }
 header span a img{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 header span a img:hover {
     display: flex;
@@ -117,6 +122,7 @@ header ul {
     color: darkgreen;
     gap: 50px;
     height: 100%;
+    margin-right: 170px;
 }
 #logo_cart:hover{
     display: flex;
@@ -146,7 +152,7 @@ header ul {
 }
 
 aside {
-    background-color: rgb(245, 211, 76);
+    background-color: rgb(245, 220, 119);
     width:0vw;
     border-color: grey;
     color: black;
@@ -271,7 +277,7 @@ aside.show {
 
 .productBig {
     flex:1;
-    display:flex;
+    display:flex;   
     justify-content: center;
     align-items: center;
 }

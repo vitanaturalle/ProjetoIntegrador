@@ -6,16 +6,14 @@
     text-decoration: none;
 }
 html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(245, 219, 115);
+    background-image: url(./assets/img_bk_light.JPG);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
 }
 main {
     padding: 5vh;
     color: #000;
-    background-color: rgb(245, 219, 115);
 }
 /* ---------- RESPONSIVIDADE CSS ---------- */
 .small-header {
@@ -80,7 +78,7 @@ header {
     top: 0;
 }
 header span a img{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 header span a img:hover {
     display: flex;
@@ -95,6 +93,7 @@ header ul {
     color: darkgreen;
     gap: 50px;
     height: 100%;
+    margin-right: 170px;
 }
 #logo_cart:hover{
     display: flex;
@@ -111,12 +110,14 @@ header ul {
  
 .main_description_one {
     border-radius: 12px;
-    max-width: 100%;
+    max-width: 80%;
+    align-items: center;
     height: 55%;
-    padding: 10px;
+    margin: 40px 50px 50px 100px;
+    padding: 20px;
     display: flexbox;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 223, 137);
 }
 .main_description_two {
     border-radius: 12px;
@@ -124,7 +125,7 @@ header ul {
     height: 400px;
     padding: 30px;
 } 
-.main_description_tree {
+.main_description_three {
     border-radius: 12px;
     width: 50%;
     height: 100px;
@@ -135,71 +136,75 @@ header ul {
     text-align: justify;
     color: black;
     font-size: 1.0rem;
+    margin: 10px 50px 10px 40px;
     padding: 0 80px 0 80px;
 }
 #title_style {
     border-radius: 12px;
-    width: 100%;
+    width: 80%;
     text-align:center;
-    height: 40px;
-    padding: 0;
+    margin: 10px 10px 10px 110px;
+    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(234, 92, 43);
+    background-color: rgb(245, 223, 137);
+}
+.cx_title {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
 }
 .section_style_left1 {
-    border-radius: 50%;
-    width: 50%;
-    text-align:justify;
-    height: 160px;
+    background-color: rgb(180, 214, 129);
+    border-radius: 12px;
+    width: 400px;
+    height: auto;
+    margin: 10px 40px 10px 10px;
     padding: 30px;
-    margin-right: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(149, 205, 65);
+    cursor:pointer;
+    text-align: justify;
 }
+.section_style_left1:hover {
+    scale: 1.1;
+}
+
 .section_style_left2 {
-    border-radius: 50%;
-    width: 800px;
-    text-align:center;
-    height: 330px;
-    padding: 0 30px 0 30px;
-    margin-right: 600px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(149, 205, 65);
-}
-.section_style_left3 {
-    border-radius: 50%;
-    width: 800px;
-    text-align:center;
-    height: 360px;
-    padding: 0 30px 0 30px;
-    margin-right: 600px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(149, 205, 65);
-}
-.section_style_right1 {
-    border-radius: 50%;
-    width: 50%;
-    text-align:justify;
-    height: 160px;
+    background-color: rgb(180, 214, 129);
+    border-radius: 12px;
+    width: 400px;
+    height: auto;
+    margin: 10px 40px 10px 10px;
     padding: 30px;
-    margin-left: 550px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(149, 205, 65);
+    cursor:pointer;
+    text-align: justify;
 }
-.section_style_right2 {
-    border-radius: 50%;
+.section_style_left2:hover {
+    scale: 1.1;
+}
+
+.section_style_left3 {
+    background-color: rgb(180, 214, 129);
+    border-radius: 12px;
     width: 800px;
-    text-align:center;
-    height: 330px;
-    padding: 0 30px 0 30px;
-    margin-left: 400px;
+    height: auto;
+    margin: 10px 40px 10px 10px;
+    padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(149, 205, 65);
+    cursor:pointer;
+    text-align: justify;
 }
+.section_style_left3:hover {
+    scale: 1.1;
+}
+
 
 #main_search{
     background-color:rgb(223, 184, 171);
-    border:solid 2px rgb(234, 92, 43);
+    border:solid 2px rgb(255, 127, 63);
     border-radius:10px;
     width:300px;
     height:32px;
@@ -222,7 +227,7 @@ header ul {
     border-radius:0 7px 7px 0;
     width:74px;
     font-weight:bold;
-    background:rgb(234, 92, 43);
+    background:rgb(255, 127, 63);
 }
 #btnSearch2{
     border:none;
@@ -232,7 +237,7 @@ header ul {
     border-radius:0 7px 7px 0;
     width:79px;
     font-weight:bold;
-    background:rgb(234, 92, 43);
+    background:rgb(255, 127, 63);
 }
 #main_search img{
     float:left;
@@ -344,14 +349,7 @@ header ul {
     font-weight: bold;
     width: 70px;
 }
-.cx_title {
-    display: flex;
-    gap: 40px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: center;
-}
+
 .cx_1 {
     background-color: rgb(255, 127, 63);
     border-radius: 12px;
@@ -365,7 +363,7 @@ header ul {
     scale: 1.1;
 }
 .cx_2 {
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 30%;
     height: 250px;
@@ -386,7 +384,7 @@ header ul {
     flex-wrap: nowrap;
 }
 .main_login1 {
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 500px;
     height: 300px;
@@ -399,7 +397,7 @@ header ul {
     color: darkgreen;
 }
 .main_login2 {
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 500px;
     height: 300px;
@@ -544,7 +542,7 @@ header ul {
     width: 88%; 
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
-    background-color: rgb(246, 216, 96) ;
+    background-color: rgb(245, 220, 119) ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
     -webkit-box-shadow: 5px;
@@ -682,7 +680,6 @@ form i {
     visibility: hidden;
 }
 
-
 .section_recipe {
     display: flex;
     flex-direction: row;
@@ -690,7 +687,7 @@ form i {
     justify-content:flex-end;
 }
 .section_recipe1 {
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 550px;
     height: 950px;
@@ -698,7 +695,7 @@ form i {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .section_recipe2 {
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 350px;
     display: flex;
@@ -723,10 +720,13 @@ form i {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
     width: 900px;
     height: 300px;
+    height: 50%;
+    min-height: 200px;
+    max-height: 400px;
     padding: 10px;
     text-align: start;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

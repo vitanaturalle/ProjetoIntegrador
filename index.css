@@ -6,16 +6,15 @@
     text-decoration: none;
 }
 html, body{
-    width: 100%;
-    height: 100vh;
     margin: 120px 0 0 0;
-    padding: 0;
-    background-color: rgb(245, 219, 115);
+    background-image: url(./assets/img_bk_light.JPG);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
 }
 main {
     padding: 5vh;
     color: #000;
-    background-color: rgb(245, 219, 115);
 }
 /* ---------- RESPONSIVIDADE CSS ---------- */
 .small-header {
@@ -80,7 +79,7 @@ header {
     top: 0;
 }
 header span a img{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 header span a img:hover {
     display: flex;
@@ -95,6 +94,7 @@ header ul {
     color: darkgreen;
     gap: 50px;
     height: 100%;
+    margin-right: 170px;
 }
 #logo_cart:hover{
     display: flex;
@@ -103,7 +103,7 @@ header ul {
 
 #main_search{
     background-color:rgb(223, 184, 171);
-    border:solid 2px rgb(234, 92, 43);
+    border:solid 2px rgb(255, 127, 63);
     border-radius:10px;
     width:300px;
     height:32px;
@@ -126,7 +126,7 @@ header ul {
     border-radius:0 7px 7px 0;
     width:74px;
     font-weight:bold;
-    background:rgb(234, 92, 43);
+    background:rgb(255, 127, 63);
 }
 #btnSearch2{
     border:none;
@@ -136,18 +136,22 @@ header ul {
     border-radius:0 7px 7px 0;
     width:79px;
     font-weight:bold;
-    background:rgb(234, 92, 43);
+    background:rgb(255, 127, 63);
 }
 #main_search img{
     float:left;
 }
 /*---INDEX---*/
 .slider {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+    margin: 30px 10px 10px 150px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 380px;
+    overflow:hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 10px 10px;
+    cursor:pointer;
+    border-radius: 12px;
 }
 
 .slides {   
@@ -166,13 +170,14 @@ header ul {
 }
 
 .slide img {
-    width: 800px;
+    width: 1000px;
     border-radius: 20px;
 }
 
 .manual-navigation {
     position: absolute;
     width: 800px;
+    margin-left: 100px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -187,7 +192,7 @@ header ul {
 }
 
 .manual-btn:not(:last-child){
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .manual-btn:hover {
@@ -260,9 +265,9 @@ header ul {
 .cx_1 {
     background-color: rgb(255, 127, 63);
     border-radius: 12px;
-    width: 30%;
-    height: 250px;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor:pointer;
 }
@@ -270,11 +275,12 @@ header ul {
     scale: 1.1;
 }
 .cx_2 {
-    background-color: rgb(246, 216, 96);
+    background-color: rgb(245, 220, 119);
     border-radius: 12px;
-    width: 30%;
-    height: 250px;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor:pointer;
 }
