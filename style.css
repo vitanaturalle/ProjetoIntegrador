@@ -196,7 +196,7 @@ header ul {
     background-color:rgb(223, 184, 171);
     border:solid 2px rgb(255, 127, 63);
     border-radius:10px;
-    width:300px;
+    width:225px;
     height:32px;
     margin-left: 75%;
 }
@@ -207,7 +207,7 @@ header ul {
     font-size:16px;
     border:none;
     height:32px;
-    width:191px;
+    width:150px;
 }
 #btnSearch{
     border:none;
@@ -215,7 +215,7 @@ header ul {
     height:32px;
     font-size: 12px;
     border-radius:0 7px 7px 0;
-    width:74px;
+    width:40px;
     font-weight:bold;
     background:rgb(255, 127, 63);
 }
@@ -225,110 +225,13 @@ header ul {
     height:32px;
     font-size: 12px;
     border-radius:0 7px 7px 0;
-    width:79px;
+    width:40px;
     font-weight:bold;
     background:rgb(255, 127, 63);
 }
 #main_search img{
     float:left;
 }
-/*---INDEX---*/
-.slider {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 800px;
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid green;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: green;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -30%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -60%;
-}
-
-.navigation-auto div{
-    border: 2px #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: #fff;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: #fff;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: #fff;
-}
-
-
 .box_select select{
     border-color: black;
     width: 200px;
