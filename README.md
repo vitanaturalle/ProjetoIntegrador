@@ -1,8 +1,10 @@
-Projeto Integrador - e-commerce Vita Naturalle (em desenvolvimento)
+Projeto Integrador - e-commerce Vita Naturalle
+
+Equipe de Criação e Desenvolvimento: Gisele Monteiro Gazinhato e Clayton Souza
+
+Status: em desenvolvimento
 
 Projeto Integrador desenvolvido pelo Grupo 2 da Turma 2 do Programa Portal Tech 2022, realizado pela Proz Educação em parceria com a Meta e AWS.
-
-Grupo 2: Gisele Monteiro Gazinhato e Clayton Souza
 
 Nosso projeto consiste na criação e desenvolvimento de um site e-commerce de produtos naturais, com informações sobre os benefícios do consumo e receitas com os produtos disponíveis.
 O site conta com 7 páginas, sendo:
