@@ -65,6 +65,7 @@ header {
     padding: 1vh;
     display: flex;
     justify-content: space-between;
+    
 }
 #header_logo {
     background-image: url(./assets/img_header.JPG);
@@ -94,8 +95,14 @@ header ul {
     color: darkgreen;
     gap: 50px;
     height: 100%;
-    margin-right: 170px;
+    margin-right: 120px;
 }
+@media (max-width: 800px) {
+    header ul {
+        display: none;
+    }
+}
+
 #logo_cart:hover{
     display: flex;
     scale: 1.5;
@@ -107,7 +114,7 @@ header ul {
     border-radius:10px;
     width:225px;
     height:32px;
-    margin-left: 75%;
+    margin-left: 80%;
 }
 #search{
     float:left;
@@ -141,7 +148,7 @@ header ul {
 #main_search img{
     float:left;
 }
-/*---INDEX---*/
+/*---SLIDER---*/
 .slider {
     margin: 30px 10px 10px 150px;
     width: 100%;
